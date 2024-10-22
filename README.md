@@ -1,1 +1,8 @@
-Init
+- Vue3
+- JavaScript
+- Tailwind : +autoprefixer postcss
+- Eslint: +@antfu/eslint-config
+- Vue Router
+- Pinia
+- unplugin-auto-import
+- axios
