@@ -1,5 +1,9 @@
 <script setup>
 import { mainStore } from '../store/index.js'
+
+onMounted(() => {
+  console.err('Say', mainStore().sayMyName)
+})
 </script>
 
 <template>

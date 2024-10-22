@@ -5,4 +5,8 @@ export default antfu({
     '**/fixtures',
     // ...globs
   ],
+}, {
+  rules: {
+    'no-console': 'off',
+  },
 })
