@@ -1,13 +1,15 @@
 <script setup>
+import meme from '@/components/meme.vue'
 import { mainStore } from '../store/index.js'
 
 onMounted(() => {
-  console.err('Say', mainStore().sayMyName)
+  console.error('Say', mainStore().sayMyName)
 })
 </script>
 
 <template>
   <h1 class="text-3xl font-bold underline">
-    My {{ mainStore().sayMyName }}
+    Hey there, {{ mainStore().sayMyName }}
   </h1>
+  <meme />
 </template>
