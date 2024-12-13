@@ -1,5 +1,4 @@
 <script setup>
-import meme from '@/components/meme.vue'
 import { mainStore } from '../store/index.js'
 
 onMounted(() => {

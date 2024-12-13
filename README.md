@@ -1,3 +1,5 @@
+## A Templates For Frontend Project
+
 - Vue3
 - JavaScript
 - Tailwind : +autoprefixer postcss
@@ -5,4 +7,5 @@
 - Vue Router
 - Pinia
 - unplugin-auto-import
+- unplugin-vue-components
 - axios
