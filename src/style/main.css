@@ -1,6 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@utility flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@theme {
+  --color-zx-1: #eff6ff;
+  --color-zx-2: #aed2ff;
+  --color-zx-3: #32e4fe;
+  --color-zx-4: #45a2ff;
+  --color-zx-5: #3d6dbc;
+  --color-zx-6: #1d4ed8;
+  --color-zx-7: #172554;
+  --color-zx-8: #051c45;
+  --color-zx-9: #000c29; 
+  --color-zx-6.1: #1e40af;
+}
 
 #app {
   position: relative;
