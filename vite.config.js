@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',
+    // host: '0.0.0.0',
     proxy: {
       // '/geoserver': {
       //   target: `http://localhost:8080`,

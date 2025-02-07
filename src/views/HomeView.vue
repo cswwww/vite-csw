@@ -13,6 +13,7 @@ onMounted(() => {
     <h1 class="text-zx-5 text-3xl font-bold underline">
       Hey there, {{ mainStore().sayMyName }}
     </h1>
+    <p>Say something:</p>
     <meme />
   </div>
 </template>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./reset.css";
 
 @utility flex-center {
     display: flex;
