@@ -1,5 +1,5 @@
 <script setup>
-import { mainStore } from '../store/index.js'
+import { mainStore } from '../stores/index.js'
 
 onMounted(() => {
   console.error('Say', mainStore().sayMyName)
