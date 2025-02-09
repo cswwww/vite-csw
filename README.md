@@ -2,7 +2,7 @@
 
 - Vue3
 - JavaScript
-- Tailwind4 : +@tailwindcss/vite
+- UnoCSS
 - Eslint: +@antfu/eslint-config
 - Vue Router
 - Pinia
