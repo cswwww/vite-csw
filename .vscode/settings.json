@@ -1,0 +1,11 @@
+{
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".env*,.eslint*,package*,.prettier*,.stylelint*,commitlint*,pnpm*,ts*,yarn*,.git*,index.html,nginx.conf,Dockerfile,docker-compose.yml,env.d.ts"
+  },
+}
