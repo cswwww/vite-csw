@@ -1,8 +1,10 @@
 {
   "name": "vite-csw",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
+  "description": "A Vite + Vue 3 + JavaScript + UnoCSS template",
+  "author": "CSW",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,21 +13,21 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "axios": "^1.9.0",
+    "axios": "^1.11.0",
     "pinia": "^2.3.1",
-    "vue": "^3.5.14",
+    "vue": "^3.5.20",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.13.2",
+    "@antfu/eslint-config": "^5.2.1",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.27.0",
+    "@eslint/js": "^9.34.0",
     "@vitejs/plugin-vue": "^5.2.4",
-    "eslint": "^9.27.0",
+    "eslint": "^9.34.0",
     "eslint-plugin-vue": "^9.33.0",
     "unocss": "^65.5.0",
-    "unplugin-auto-import": "^19.2.0",
-    "unplugin-vue-components": "^28.5.0",
+    "unplugin-auto-import": "^20.1.0",
+    "unplugin-vue-components": "^29.0.0",
     "vite": "^6.3.5"
   }
 }
