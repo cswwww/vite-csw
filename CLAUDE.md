@@ -5,7 +5,7 @@
 - **框架**: Vue 3 (Composition API) + Vite
 - **状态管理**: Pinia
 - **路由**: Vue Router
-- **样式**: Tailwind CSS
+- **样式**: UnoCSS
 - **语言**: JavaScript
 
 ## GIS 可视化开发规范
@@ -98,7 +98,7 @@ src/
 
 ### 样式规范
 
-- 使用 Tailwind CSS 原子类
+- 使用 UnoCSS 原子类
 - 地图容器必须设置明确宽高
 - 覆盖第三方库样式时使用专属前缀（如 `.maplibre-`、`.leaflet-`）
 
