@@ -98,7 +98,11 @@ src/
 
 ### 样式规范
 
-- 使用 UnoCSS 原子类
+- 使用 UnoCSS 原子类；编写样式前先读取项目内官方 UnoCSS skill（`.claude/skills/unocss/` 或 `.agents/skills/unocss/`）遵循其规范
+- 常用组合优先沉淀为 shortcuts，统一维护在 `uno.config.js`
+- 图标使用 preset-icons（如 `i-carbon-xxx`，图标集来自 `@iconify-json/*`）
+- 暗色模式使用 class 策略：根节点切换 `.dark` 类，样式用 `dark:` 变体编写
+- 本基底不预设任何品牌色板/设计语义；项目需要定制色板或主题 token 时，在 `uno.config.js` 的 `theme` 与 shortcuts 中统一定义，不在组件里硬编码颜色
 - 地图容器必须设置明确宽高
 - 覆盖第三方库样式时使用专属前缀（如 `.maplibre-`、`.leaflet-`）
 
@@ -124,4 +128,5 @@ pnpm run dev      # 开发
 pnpm run build    # 构建
 pnpm run lint     # 检查
 pnpm run lint:fix # 自动修复
+npx skills update # 升级项目内 agent skills（升级 UnoCSS 大版本后执行）
 ```

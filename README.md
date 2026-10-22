@@ -20,6 +20,7 @@
 - 🎯 使用最新的 Vue 3 组合式 API
 - 🛠️ 集成了 ESLint（代码检查与格式规范一体）
 - 📦 开箱即用的路由和状态管理
+- 🤖 内置 UnoCSS 官方 agent skill（`.agents/skills/`，兼容 Claude Code / Codex / Copilot 等）
 
 ## 快速开始
 
@@ -88,7 +89,7 @@ src/
 
 ## 开发规范
 
-完整的开发约定（GIS 库选型、地图实例管理、图层组织、坐标处理、组件与样式规范）见 **[CLAUDE.md](./CLAUDE.md)**，其中：
+完整的开发约定（GIS 库选型、地图实例管理、图层组织、坐标处理、组件与样式规范）见 **[CLAUDE.md](./CLAUDE.md)**（`AGENTS.md` 为其软链，供 Codex / Copilot 等 agent 识别），其中：
 
 - 地图实例使用 `markRaw()` 包裹，避免响应式开销
 - 坐标统一使用 `[lng, lat]` 顺序（GeoJSON 标准）
