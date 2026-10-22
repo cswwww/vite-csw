@@ -89,7 +89,7 @@ src/
 
 ## 开发规范
 
-完整的开发约定（GIS 库选型、地图实例管理、图层组织、坐标处理、组件与样式规范）见 **[CLAUDE.md](./CLAUDE.md)**（`AGENTS.md` 为其软链，供 Codex / Copilot 等 agent 识别），其中：
+完整的开发约定（GIS 库选型、地图实例管理、图层组织、坐标处理、组件与样式规范）以 **[AGENTS.md](./AGENTS.md)** 为主，其中：
 
 - 地图实例使用 `markRaw()` 包裹，避免响应式开销
 - 坐标统一使用 `[lng, lat]` 顺序（GeoJSON 标准）
