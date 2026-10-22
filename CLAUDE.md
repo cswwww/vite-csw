@@ -31,10 +31,10 @@
    - 提供 `map` 或 `mapInstance` refs 统一暴露
 
    ```js
-   // Good
-   const map = markRaw(null)
+   // Good - 用 let 声明，实例在 onMounted 中赋值
+   let map = null
    onMounted(() => {
-     map = new Map(mapContainer.value)
+     map = markRaw(new Map(mapContainer.value))
    })
 
    // Bad - 不要在 data 中存储地图实例

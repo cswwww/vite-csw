@@ -10,6 +10,7 @@ import axios from 'axios'
 
 // 创建一个新的请求实例instance,instance.的用法和axios.的用法一致，可以使用instance({})、instance.get（）、instance.post()
 const instance = axios.create({
+  // baseURL 取 Vite 的 BASE_URL，部署到子路径时会自动跟随 base 变化
   baseURL: import.meta.env.BASE_URL || '',
   timeout: 20000, // 超时时间 20秒
 })
@@ -39,8 +40,12 @@ instance.interceptors.request.use(
 // 响应成功:执行回调函数1;响应失败，执行回调函数2
 instance.interceptors.response.use(
   (response) => {
-    const { code, message } = response.data
-    if (response && code && code !== 200) {
+    const { code, message } = response.data || {}
+
+    // 只有当响应体确实是约定的 { code, message } 结构时才做业务码校验，
+    // 否则（裸数据 / 非约定结构）直接透传，避免把真实错误当成成功放行
+    const hasBizCode = code !== undefined && code !== null
+    if (hasBizCode && code !== 200) {
       // 请求成功后的报错拦截
       // 可在这里处理特定错误码，如 401 跳转登录
       // if (code === 401) router.push('/login')

@@ -122,8 +122,14 @@ dist
 # pnpm
 .pnpm-store/
 
+# npm 锁文件（本项目统一使用 pnpm，勿提交 package-lock.json）
+package-lock.json
+
 # Vercel
 .vercel
 
 # IDE
 .idea/
+
+# WorkBuddy 工作区数据
+.workbuddy/

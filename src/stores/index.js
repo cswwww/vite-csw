@@ -2,7 +2,7 @@
  * @Date: 2024-01-13 16:31:46
  * @LastEditors: ReBeX  cswwwx@gmail.com
  * @LastEditTime: 2024-10-22 19:07:40
- * @FilePath: \vite-csw\src\store\index.js
+ * @FilePath: /vite-csw/src/stores/index.js
  * @Description: 全局状态
  */
 import { defineStore } from 'pinia'
