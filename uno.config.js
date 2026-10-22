@@ -1,10 +1,11 @@
-import presetWind4 from '@unocss/preset-wind4'
-import { defineConfig, presetAttributify } from 'unocss'
+import { defineConfig, presetWind3, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetWind4(),
-    presetAttributify(),
+    presetWind3(),
+  ],
+  transformers: [
+    transformerDirectives(),
   ],
   shortcuts: {
     'flex-center': 'flex items-center justify-center',
